@@ -1,29 +1,32 @@
 @CHARSET "EUC-KR";
 <style type="text/css">
-	header, section, footer, aside, nav, article, figure, figcaption {
+	header, section, footer, aside, nav, article, figure, figcaption, round_1 {
 		display: block;}
 	body {
 		color: #666666;
 		background-color: #FFFFFF;
-		/* background-image: url("img/1.jpg"); */
-		background-position: center;
+		background-repeat:repeat-x;
+		background-image: url("../img/110.jpg");
+		background-position: 0% 100%;
+		float:left
 		font-family: Georgia, Times, serif;
 		line-height: 1.4em;
 		margin: 0px;}
 	.wrapper {
-		width: 940px;
+		width: 980px;
 		margin: 20px auto 20px auto;
 		/* border: 2px solid #000000; */
 		background-color: #ffffff;}
 	header {
 		height: 160px;
-		background-image: url(img/15.jpg);}
+		background-image: url("../img/15.jpg"); 
+		background-position:bottom;}
 	h1 {
 		text-indent: -9999px;
 		width: 940px;
 		height: 130px;
 		margin: 0px;}
-	nav, footer {
+	nav /* , footer */ {
 		clear: both;
 		color: #ffffff;
 		background-color: #aeaca8;
@@ -41,8 +44,8 @@
 	section.courses {
 		float: left;
 		/* width: 659px; */
-		width: 330px;
-		border-right: 1px solid #eeeeee;}
+		width: 360px;
+		border-right: 2px solid /* #eeeeee */ #000000;}
 	article {
 		clear: both;
 		overflow: auto;
@@ -51,17 +54,17 @@
 		margin-top: 40px;}
 	figure {
 		float: left;
-		width: 290px;
-		height: 220px;
+		width: 330px;
+		height: 280px;
 		padding: 5px;
-		margin: 20px;
-		border: 1px solid #eeeeee;}
+		margin: 10px;
+		border: 2px solid #000000;}
 	figcaption {
 		font-size: 90%;
-		text-align: left;}
+		text-align: both;}
 	aside {
 		width: 230px;
-		float: left;
+		float: right;
 		padding: 0px 0px 0px 20px;}
 	aside section a {
 		display: block;
@@ -86,7 +89,13 @@
 		color: #de6581;}
 	footer {
 		font-size: 80%;
-		padding: 7px 0px 0px 20px;}
+		padding: 7px 0px 0px 20px;
+		clear: both;
+		color: #ffffff;
+		background-color: #0297b5;
+		opacity : 10;
+		height: 0.1px;}
+	/* round_1{border-right: 1px solid #eeeeee;} */
 </style>
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
